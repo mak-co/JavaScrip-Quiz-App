@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="box">
+
+        <!-- heading and start button for the quiz -->
+        <div class="heading">
+            <h1>QUIZ</h1>
+            <h2>JavaScript - Test Your Knowledge
+                !</h2>
+        </div>
+        <div>
+            <button id="start">Start</button>
+        </div>
+
+
+        <!-- question mcq card -->
+
+        <div id="queCard" class="">
+            <h2 class="que"></h2>
+            <div id="colOpTimer">
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="answer"  id="r1" value="0">
+                        <label for="1" id="op1"></label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="answer" id="r2" value="1">
+                        <label for="2" id="op2"></label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="answer" id="r3" value="2">
+                        <label for="3" id="op3"></label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="answer" id="r4" value="3">
+                        <label for="4" id="op4"></label>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Timer -->
+                <div id="timer"></div>
+
+            </div>
+            <button id="save">Save Answer</button>
+
+
+        </div>
+
+
+
+<!-- analysing Card -->
+        <div id="card" class="disabled">
+            <h1>Analysing....</h1>
+
+            <div id="download-bar">
+                <div id="tracker"></div>
+                <h3>...</h3>
+            </div>
+        </div>
+
+
+
+<!-- Result card  -->
+        <div id="result" >
+           <h1 id="score">Your Score is</h1>
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
